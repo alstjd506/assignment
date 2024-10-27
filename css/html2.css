@@ -1,0 +1,29 @@
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.up {
+    display: none;
+}
+
+.question {
+    background-color: white;
+    border-top: 1px solid gray;
+}
+
+.question span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.answer {
+    display: none;
+    background-color: #ccc;
+}
