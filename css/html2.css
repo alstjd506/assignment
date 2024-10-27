@@ -1,5 +1,5 @@
 .container {
-    width: 80%;
+    width: 55%;
     margin: auto;
     margin-top: 50px;
 }
@@ -17,29 +17,44 @@ img {
     background-color: white;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    display: flex;
+    position: relative;
     align-items: center;
-    justify-content: space-between;
     padding: 20px;
     flex-wrap: wrap;
 }
 
 .left {
-    display: flex;    
+    display: flex;
+    margin-right: 30px;  
 }
 
 .left span {
     font-size: 30px;
+    margin-right: 30px;
     font-weight: bold;
 }
 
 .right {
+    position: absolute;
+    top: 20px;
+    right: 10px;
     display: flex;
     margin-left: auto;
 }
 
 .answer {
     display: none;
-    background-color: #ccc;
-    padding-left: 100px;
+    background-color: #ebe9e9;
+    padding-left: 50px;
+}
+.answer img {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.answer span {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 20px;
 }
