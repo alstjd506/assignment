@@ -4,31 +4,100 @@
     <meta charset="UTF-8">
     <link href="css/html2.css" rel="stylesheet">
     <title>과제2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="faq">
             <div class="question">
-                <img src="img/Q.png">
-                <span class="">타이틀입니다타이틀입니다타이틀입니다</span>
-                <img class="down" src="img/down.png">
-                <img class="up" src="img/up.png">
+                <div class="left">
+                    <img src="img/Q.png">
+                    <span class="">타이틀입니다타이틀입니다타이틀입니다</span>
+                </div>
+                <div class="right">
+                    <img class="down" src="img/down.png">
+                    <img class="up" src="img/up.png">
+                </div>
             </div>
             <div class="answer">
-                <img src="img/A.png">
+                <div>
+                    <img src="img/A.png">
+                </div>
                 <span>안녕하십니까. 현행 개인정보취급방침을 아래와 같이 개정하여 공지합니다. 회원 여러분께서는 변경 내용을 꼭 확인하시고 서비스 이용에 차질이 없으시길 바랍니다.</span>
             </div>
         </div>
-        <div class="question">
-            <img src="img/Q.png">
-            <span>타이틀입니다타이틀입니다타이틀입니다</span>
-            <img class="down" src="img/down.png">
-            <img class="up" src="img/up.png">
+        <div class="faq">
+            <div class="question">
+                <div class="left">
+                    <img src="img/Q.png">
+                    <span class="">타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다타이틀입니다</span>
+                </div>
+                <div class="right">
+                    <img class="down" src="img/down.png">
+                    <img class="up" src="img/up.png">
+                </div>
+            </div>
+            <div class="answer">
+                <div>
+                    <img src="img/A.png">
+                </div>
+                <span>안녕하십니까. 현행 개인정보취급방침을 아래와 같이 개정하여 공지합니다. 회원 여러분께서는 변경 내용을 꼭 확인하시고 서비스 이용에 차질이 없으시길 바랍니다.</span>
+            </div>
         </div>
-        <div class="answer">
-            <img src="img/A.png">
-            <span>안녕하십니까. 현행 개인정보취급방침을 아래와 같이 개정하여 공지합니다. 회원 여러분께서는 변경 내용을 꼭 확인하시고 서비스 이용에 차질이 없으시길 바랍니다.</span>
+        <div class="faq">
+            <div class="question">
+                <div class="left">
+                    <img src="img/Q.png">
+                    <span class="">타이틀입니다타이틀입니다타이틀입니다</span>
+                </div>
+                <div class="right">
+                    <img class="down" src="img/down.png">
+                    <img class="up" src="img/up.png">
+                </div>
+            </div>
+            <div class="answer">
+                <div>
+                    <img src="img/A.png">
+                </div>
+                <span>안녕하십니까. 현행 개인정보취급방침을 아래와 같이 개정하여 공지합니다. 회원 여러분께서는 변경 내용을 꼭 확인하시고 서비스 이용에 차질이 없으시길 바랍니다.</span>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <div class="left">
+                    <img src="img/Q.png">
+                    <span class="">타이틀입니다타이틀입니다타이틀입니다</span>
+                </div>
+                <div class="right">
+                    <img class="down" src="img/down.png">
+                    <img class="up" src="img/up.png">
+                </div>
+            </div>
+            <div class="answer">
+                <div>
+                    <img src="img/A.png">
+                </div>
+                <span>안녕하십니까. 현행 개인정보취급방침을 아래와 같이 개정하여 공지합니다. 회원 여러분께서는 변경 내용을 꼭 확인하시고 서비스 이용에 차질이 없으시길 바랍니다.</span>
+            </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $('.down').click(function() {
+                $('.answer').slideUp();
+                $('.up').hide();
+                $('.down').show();
+                $(this).closest('.faq').find('.answer').slideDown();
+                $(this).hide();
+                $(this).siblings('.up').show();
+            });
+
+            $('.up').click(function() {
+                $(this).closest('.faq').find('.answer').slideUp();
+                $(this).hide();
+                $(this).siblings('.down').show();
+            });
+        });
+    </script>
 </body>
 </html>

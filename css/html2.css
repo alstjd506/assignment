@@ -5,8 +5,8 @@
 }
 
 img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .up {
@@ -16,14 +16,30 @@ img {
 .question {
     background-color: white;
     border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
-.question span {
-    font-size: 50px;
+.left {
+    display: flex;    
+}
+
+.left span {
+    font-size: 30px;
     font-weight: bold;
+}
+
+.right {
+    display: flex;
+    margin-left: auto;
 }
 
 .answer {
     display: none;
     background-color: #ccc;
+    padding-left: 100px;
 }
