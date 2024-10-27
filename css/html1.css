@@ -1,0 +1,128 @@
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.totalCount {
+    font-size: 16px;
+}
+
+.search {
+    display: flex;
+    align-items: center; 
+}
+
+.searchType {
+    height: 30px;
+    width: 150px;
+    margin-right: 5px;
+}
+
+.search input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.searchBtn {
+    height: 30px;
+    background-color: navy;
+    color: #ccc;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.editBtn, .delBtn {
+    height: 30px;
+    background-color: gray;
+    color: #ccc;
+}
+
+.listBtn, .addBtn {
+    height: 30px;
+    background-color: navy;
+    color: #ccc;
+}
+
+.number {
+    color: blue; 
+    font-weight: bold;
+}
+
+.board {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.board thead th {
+    border-top: 3px solid navy; 
+    border-bottom: 1px solid #ccc; 
+    padding: 10px;
+}
+
+.board tbody td {
+    border-bottom: 1px solid #ccc; 
+    padding: 10px;
+}
+
+.board tbody tr:last-child td {
+    border-bottom: 3px solid navy; 
+}
+
+.board th, .board td {
+    text-align: center;
+}
+
+.title {
+    text-align: left !important;
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    max-width: 1000px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.check {
+    background-color: gray !important;
+}
+
+.new {
+    height: 15px;
+    width: 15px;
+}
+
+.file {
+    height: 20px;
+    width: 20px;
+}
