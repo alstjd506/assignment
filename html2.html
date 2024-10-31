@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko-KR">
 <head>
     <meta charset="UTF-8">
     <link href="css/html2.css" rel="stylesheet">
@@ -79,19 +79,34 @@
     </div>
     <script>
         $(document).ready(function() {
+            // $('.down').click(function() {
+            //     $('.answer').slideUp();
+            //     $('.up').hide();
+            //     $('.down').show();
+            //     $(this).closest('.faq').find('.answer').slideDown();
+            //     $(this).hide();
+            //     $(this).siblings('.up').show();
+            // });
+
+            // $('.up').click(function() {
+            //     $(this).closest('.faq').find('.answer').slideUp();
+            //     $(this).hide();
+            //     $(this).siblings('.down').show();
+            // });
+
             $('.down').click(function() {
-                $('.answer').slideUp();
-                $('.up').hide();
-                $('.down').show();
-                $(this).closest('.faq').find('.answer').slideDown();
-                $(this).hide();
-                $(this).siblings('.up').show();
+                $('.answer').css('display', 'none');
+                $('.up').css('display', 'none');
+                $('.down').css('display', 'block');
+                $(this).closest('.faq').find('.answer').css('display', 'block');
+                $(this).css('display', 'none');
+                $(this).siblings('.up').css('display', 'block');
             });
 
             $('.up').click(function() {
-                $(this).closest('.faq').find('.answer').slideUp();
-                $(this).hide();
-                $(this).siblings('.down').show();
+                $(this).closest('.faq').find('.answer').css('display', 'none');
+                $(this).css('display', 'none');
+                $(this).siblings('.down').css('display', 'block');
             });
         });
     </script>
